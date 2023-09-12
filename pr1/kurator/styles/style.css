@@ -1,0 +1,585 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color:  #000000;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  background-color:  #f2f2f2;
+}
+
+
+.logo__place_haeder{
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+
+.header__title{
+
+  width: 730px;
+  margin-left:  64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-style: 600;
+}
+
+
+.header__subtitle{
+  position: absolute;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-style: normal;
+}
+
+
+.header__link{
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__mian-illustration{
+position: absolute;
+bottom: 0;
+right: 0;
+z-index: 1;
+}
+
+
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color:#2f80ed ;
+  animation: rotation 20s infinite;
+}
+
+
+.description{
+  width: 80%;
+  margin: 100px auto 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns{
+  width: 175px;
+}
+
+
+.two-columns__main-text{
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__brief{
+line-height: 1.2;
+font-size: 18px;
+font-style: normal;
+margin-top: 0;
+color: #2f80ed;
+}
+
+
+.two-columns__main-text{
+  width: 80%;
+}
+
+.two-columns__paragraph{
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+
+}
+
+
+.two-columns__span-accent{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+
+.digits{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+}
+
+
+.section-title{
+  width: 60%;
+  margin: 100px auto 20px;
+  margin-bottom: 20px;
+  line-height: 1.15em;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  margin: 100px  auto 0;
+}
+
+
+.section-subtitle{
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+
+.table{
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 100px;
+  padding: 0;
+  list-style: none;
+
+
+}
+.table__heading{
+  line-height: 1.2em;
+  font-size: 18px;
+font-style: normal;
+}
+
+.table__cell{
+  width: 250px;
+  margin: 60px 0 0;
+  z-index: 1;
+}
+
+.table__text {
+  line-height: 1.2em;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.table__text_theme_dark{
+  line-height: 1.2em;
+  font-size: 18px;
+  font-style: normal;
+  margin: 20px 0 0;
+}
+
+
+.feynman{
+  align-items: center;
+  height: 890px;
+  margin-top: 100px;
+  background-image: url(/kurator/images/feynman.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: relative;
+  background-color:  #f2f2f2;
+}
+
+
+.feynman__title{
+  width: 648px;
+  margin: 0 auto;
+  line-height: 1.15em;
+  font-size: 120px;
+  font-style: normal;
+  text-align: center;
+}
+
+
+.feynman__subtitle{
+  line-height: 51px;
+  font-size: 36px;
+  font-style: normal;
+  margin: 70px 0 0;
+  text-align: center;
+}
+
+.feynman__link {
+  position: absolute;
+  line-height: 51px;
+  font-size: 36px;
+  font-style: normal;
+  top: 50%;
+  right: 48px;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+
+.kaufman{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: relative;
+  list-style-type: none;
+
+}
+
+/*не нужно описывать те же свойства, что и в section-title, здесь тебе нужно указать модификацию этого селектора
+он должен отличаться (судя по названию) цветом, все остальное у тебя уже прописано
+*/
+.section-title__theme_dark{
+  width: 60%;
+  text-align: center;
+  color: white;
+  line-height: 1.15em;
+  font-size: 60px;
+  /*font-weight?*/
+  font-style: 600;
+  z-index: 2;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+/*не нужно описывать те же свойства, что и в section-title, здесь тебе нужно указать модификацию этого селектора
+он должен отличаться (судя по названию) цветом, все остальное у тебя уже прописано
+*/
+.section-subtitle__theme_dark{
+  width: 60%;
+  color: white;
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+}
+
+
+.table__theme_dark{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin: 80px 0 0;
+
+}
+
+
+.table__heading_theme_dark{
+  line-height: 1.15em;
+  font-style: 600;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+
+.kaufman__triangle{
+  background-image: url(/kurator/images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  z-index: 0;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  animation: rotation 20s infinite;
+}
+
+
+.footer_column-heading{
+  color:white;
+  margin: 60px 0 40px;
+}
+
+
+.footer{
+ min-height: 350px;
+ justify-content: center;
+ display: flex;
+ background-color: #1f1f1f;
+ /* Сделал брок footer потому что если его нет то по бокам он белый, а там сплошной черный фон идет */
+
+}
+
+.footer__colomns{
+  width: 90%;
+  display: flex;
+  background-color: #000000;
+  margin: 60px auto 40px;
+  justify-content: space-between;
+
+}
+
+.footer__column {
+
+  display: flex;
+  flex-direction: column;
+  /* не смог сделть так чтобы чтобы они находились на одной линии ( чуть чуть он уходит в бок у меня) пылатлся через flex-wrap: wrap; но не помогло  */
+}
+
+
+.footer__column_content_copyright{
+flex-basis: 711px;
+justify-content: space-between;
+
+}
+
+
+.footer__column_content_info {
+
+  padding: 0;
+}
+
+.footer__column_content_social {
+padding: 0;
+}
+
+.logo__place_footer{
+  width: 228px;
+  height: 32px;
+
+
+}
+
+
+.footer__author{
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  font-style: normal;
+
+
+
+ }
+
+.footer__column-heading{
+  margin: 0 0 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f2f2f2;
+
+
+
+
+}
+
+
+.footer__column-link {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+
+
+
+
+
+}
+
+.footer__column-links{
+  line-height: 30px;
+  font-size: 18px;
+  color: white;
+  list-style: none;
+
+
+
+}
+
+
+.footer__colomn{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.footer__social-icon{
+ margin-right:  10px;
+ height: 16px;
+ width: 16px;
+
+}
+
+
+
+.techniques{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards{
+  display: flex;
+  width: 80%;
+  width: 920px;
+  flex-wrap: wrap;
+
+
+
+}
+
+.cards__description {
+margin: 0 0  60px;
+text-align: center;
+line-height: 23px;
+font-size: 18px;
+font-weight: normal;
+
+}
+
+.cards__item{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 250px;
+
+  /* не понимаю как сделать расстояния между ними 100px */
+}
+
+
+
+
+.cards__image{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 60px 40px 0;
+
+}
+
+.cards__title {
+margin: 43px 0 16px;
+text-align: center;
+line-height: 1.15;
+font-size: 24px;
+font-weight: 600;
+
+}
+
+.video{
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.video__iframes{
+  display: flex;
+}
+.video__iframe:first-child{
+  margin-right:  20px;
+}
+  .video__iframe{
+    width: 515px;
+    height: 316px;
+    margin-bottom: -60px;
+
+
+  }
+.oakley
+{
+  width: 80%;
+  margin: 100px auto 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.khan{
+  width: 80%;
+  margin: 100px auto;
+}
+
+.khan__quote{
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 36px;
+}
+
+.khan__author{
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title{
+  line-height: 1.2em;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.khan__quote-author{
+  margin-bottom: 10px;
+  line-height: 1.15em;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+
+.khan__quote-author-subline{
+  margin-bottom: 68px;
+  line-height: 1.15em;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container{
+  display: flex;
+
+}
+
+.khan__book-pic{
+  width: 620px;
+  height: 608px;
+
+
+}
+
+.khan__buy-link{
+  color: #2f80ed;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 10px 0 0 48px;
+
+}
